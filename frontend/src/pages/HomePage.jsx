@@ -34,7 +34,7 @@ function HomePage() {
       <PackageIcon className='size-12' />
     </div>
     <div className='text-center space-y-2'>
-      <h3 className='text-2xl font-semibold '>There is no product found here</h3>
+      <h3 className='text-2xl font-semibold '>There is no product  here</h3>
       <p className='text-gray-500 max-w-sm'> add a product</p>
     </div>
   </div>
@@ -48,7 +48,7 @@ function HomePage() {
         </div>
       ) : ( <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard  key={product.id} product={product} />
         ))}
       </div>)}
     </main>
