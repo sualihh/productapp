@@ -21,7 +21,7 @@ function Navbar() {
             <Link to="/" className="hover:opacity-80 transition-opacity flex items-center gap-2">
               <ShoppingCart className="w-9 h-9 text-primary" />
               <span className="font-semibold font-mono tracking-widest text-2xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                POSTGRESTORE
+                STORE
               </span>
             </Link>
           </div>

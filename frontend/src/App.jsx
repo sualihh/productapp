@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Navbar from "./component/Navbar"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import HomePage from "./pages/HomePage"
@@ -8,17 +8,18 @@ import { Toaster } from "react-hot-toast";
 
 
 function App() {
-  const {theme} = useThemeStore();
+  const { theme } = useThemeStore();
 
- useEffect(() => {
+  useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
   console.log("Current theme:", theme);
   return (
+
     <div className="min-h-screen bg-base-200 transition-colors duration-300" data-theme={theme}>
       <Navbar />
-      <Routes> 
+      <Routes>
         <Route path="/" element={<HomePage />} />
 
         <Route path="/product/:id" element={<ProductPage />} />
