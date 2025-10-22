@@ -34,7 +34,7 @@ function HomePage() {
       <PackageIcon className='size-12' />
     </div>
     <div className='text-center space-y-2'>
-      <h3 className='text-2xl font-semibold '>There is no product  here</h3>
+      <h3 className='text-2xl font-semibold '>There is no product found here</h3>
       <p className='text-gray-500 max-w-sm'> add a product</p>
     </div>
   </div>
